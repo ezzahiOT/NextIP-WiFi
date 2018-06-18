@@ -23,9 +23,6 @@ DHT dht(DHTPin, DHTTYPE);
 long now = millis();
 long lastMeasure = 0;
 
-// We have 30 amps version sensor connected to A0 pin of arduino
-// Replace with your version if necessary
-
 ACS712 sensor(ACS712_05B, A0);
 
 //--------------------------------------
