@@ -226,7 +226,7 @@ void loop() {
   dtostrf(P_AC, 6, 2, puissance);
 
   static char energie[7];
-  dtostrf(P_AC, 6, 2, energie);
+  dtostrf(E, 6, 2, energie);
 
   client.publish("nextIP/current", courant);
   client.publish("nextIP/power", puissance);
