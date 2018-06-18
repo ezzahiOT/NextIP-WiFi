@@ -178,9 +178,15 @@ void loop() {
     Serial.print(" *F\t Heat index: ");
     Serial.print(hic);
     Serial.println(" *C ");
-  }
+    
+     // ----- La régulation automatqiue du climat -----------------
+
+  if( t >= 35 && h >= 50){
+      digitalWrite(D2, HIGH);
+      //digitalWrite(D1, HIGH);
+    }
   //****************************
-  
+ }
   float U = 230;
   
   float I = sensor.getCurrentAC();
